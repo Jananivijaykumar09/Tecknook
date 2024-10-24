@@ -1,0 +1,63 @@
+/* ProfileModal.css */
+.modal-dialog {
+    max-width: 600px; /* Limit the modal width */
+    margin: 30px auto; /* Center the modal vertically and horizontally with a margin */
+  }
+  
+  .modal-body {
+    padding: 20px; /* Add padding inside the modal body */
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Space between form groups */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Bold labels */
+    color: #333; /* Dark gray for labels */
+  }
+  
+  .form-control {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  .form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+  }
+  
+  .modal-footer {
+    justify-content: space-between; /* Space buttons evenly */
+  }
+  
+  /* Button styles specific to profile-button class */
+.profile-button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+  }
+  
+  /* Primary button */
+  .profile-button.primary {
+    background-color: #007bff; /* Primary button background */
+    color: white; /* Primary button text color */
+  }
+  
+  .profile-button.primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Secondary button */
+  .profile-button.secondary {
+    background-color: #6c757d; /* Secondary button background */
+    color: white; /* Secondary button text color */
+  }
+  
+  .profile-button.secondary:hover {
+    background-color: #5a6268; /* Darker secondary on hover */
+  }

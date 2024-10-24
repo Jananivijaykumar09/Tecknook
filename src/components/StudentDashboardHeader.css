@@ -1,0 +1,98 @@
+/* StudentDashboardHeader.css */
+
+/* Specific Student Navbar Styling */
+.student-dashboard-header {
+    background-color: black !important; /* Set background to black */
+    height: 70px; /* Set the height to 70px */
+    display: flex; /* Ensure content inside navbar is properly aligned */
+    align-items: center; /* Vertically center the content */
+    padding: 0 20px; /* Add some padding for spacing */
+  }
+  
+  /* Set the TechNook text color to white */
+  .student-dashboard-header .navbar-brand {
+    color: white !important; /* Force text to be white */
+    font-size: 24px; /* Optional: adjust font size if needed */
+    text-decoration: none; /* Optional: remove underline if any */
+  }
+  
+  /* Welcome Username Styling */
+  .welcome-username {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Take up available space */
+    padding: 10px 0; /* Add padding to vertically center the text */
+  }
+  .navbar-username {
+    color: white; /* Change to your desired color */
+    margin-left:300px; /* Add spacing if needed */
+    font-size: 20px; /* Adjust font size */
+  }
+  
+  /* Fixed Student Dashboard Header Styling */
+  .student-dashboard-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top */
+    background-color: #343a40; /* Dark background */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Profile Icon Styling */
+  .profile-icon {
+    font-size: 24px; /* Adjust icon size */
+    color: #0dccf2; /* Cyan color */
+  }
+  
+  /* Dropdown menu styling */
+  .profile-dropdown .dropdown-menu {
+    background-color: #343a40; /* Dark background for the dropdown */
+    min-width: 150px; /* Limit the width */
+  }
+  
+  .profile-dropdown .dropdown-item {
+    color: white; /* Text color for dropdown items */
+  }
+  
+  .profile-dropdown .dropdown-item:hover {
+    background-color: rgba(13, 204, 242, 0.8); /* Highlight effect */
+  }
+  
+  /* Responsive adjustments for smaller screens (Tablets) */
+  @media (max-width: 768px) {
+    .student-dashboard-header .navbar-brand img {
+      width: 120px; /* Adjust logo size for smaller screens */
+    }
+  
+    .profile-dropdown .dropdown-menu {
+      min-width: 120px; /* Adjust dropdown width for smaller screens */
+    }
+  }
+  
+  /* Responsive adjustments for very small screens (Mobile phones) */
+  @media (max-width: 480px) {
+    .student-dashboard-header .navbar-brand img {
+      width: 100px; /* Further reduce logo size */
+    }
+  
+    .welcome-username {
+      font-size: 20px; /* Reduce font size for mobile */
+    }
+  
+    .student-dashboard-header {
+      height: 50px; /* Adjust height for mobile */
+      padding: 0 10px; /* Reduce padding for mobile */
+    }
+  
+    .profile-dropdown .dropdown-menu {
+      min-width: 100px; /* Further reduce dropdown width for very small screens */
+    }
+  }
+  

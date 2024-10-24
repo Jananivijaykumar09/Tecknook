@@ -1,0 +1,33 @@
+/* Header.css */
+.next-fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the header is above other content */
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light teal gradient */
+    transition: background-color 0.3s ease; /* Optional: smooth transition */
+}
+
+.next-navbar-brand-custom {
+    color: black !important; /* Change text color to black */
+    font-weight: bold;
+    font-size: 1.3rem; /* Corrected spacing */
+    margin-left: 10px; /* Add spacing if needed */
+}
+
+.navbar-brand-custom img {
+    vertical-align: middle; /* Align the image properly with text */
+}
+
+.back-to-home-button {
+    border: 2px solid hwb(359 42% 6% / 0.573);
+    background-color: black;
+    color: #0dccf2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+    background-color: hwb(359 42% 6% / 0.573);
+    color: black;
+}

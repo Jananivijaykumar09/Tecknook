@@ -1,0 +1,52 @@
+/* Custom styling for the comments navbar header */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, rgb(20, 20, 33), rgba(0, 0, 0, 1));
+}
+
+.custom-comments-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.back-to-dashboard-button {
+  border: 2px solid hwb(359 42% 6% / 0.573);
+  background-color: black;
+  color: #0dccf2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.back-to-dashboard-button:hover {
+  background-color: hwb(359 42% 6% / 0.573);
+  color: black;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .back-to-dashboard-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-dashboard-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  
+  .custom-comments-header {
+    height: 50px;
+    padding: 0 10px;
+  }
+}
+}

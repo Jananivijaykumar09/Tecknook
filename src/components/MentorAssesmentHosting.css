@@ -1,0 +1,372 @@
+/* Container for the entire page content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Added top padding to prevent overlap */
+  width: 60%;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea);
+  border-radius: 50px;
+  margin-top: 70px;
+}
+
+/* Container for the entire page content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Added top padding to prevent overlap */
+  width: 60%;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea);
+  border-radius: 50px;
+  margin-top: 70px;
+}
+
+/* Styling for the border box */
+.form-box, .mentor-form-box{
+  width: 50%; /* Increase width to 80% of the parent container */
+  max-width: 500px; /* Optional: Limit maximum width */
+  border: 2px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent; /* Transparent background */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+.retrieved-white-text {
+  font-size: 16px; /* Adjust font size as needed */
+  color: rgb(0, 0, 0); /* Change text color if needed */
+  margin-bottom: 10px; /* Space below the label */
+}
+
+.retrieved-white-text input {
+  width: 300px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  padding: 10px; /* Add some padding for better appearance */
+  border: 1px solid #ccc; /* Optional: border style */
+  border-radius: 5px; /* Optional: border radius for rounded corners */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: background color */
+}
+
+/* Styling for the header component */
+.header-container {
+  margin-bottom: 20px; /* Space below the header */
+  text-align: center;
+}
+
+/* Styling for the white text */
+.white-text {
+  color: rgb(11, 11, 11);
+}
+
+/* Styling for the dropdowns container */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between dropdowns */
+  margin-bottom: 30px; /* Space below the dropdowns */
+}
+
+/* Individual dropdown styling */
+.dropdown-container select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 150px; /* Adjust width as needed */
+}
+
+/* Container for the question posting form */
+.question-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Takes full width */
+  text-align: center;
+}
+
+/* Styling for the question and answer textareas */
+.question-form-container textarea {
+  width: 200%; /* Use 200% of the container's width */
+  max-width: 600px; /* Limit the maximum width */
+  height: 120px; /* Updated height */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 0; /* Remove previous margins */
+  position: relative; /* Enable positioning */
+  left: 50%; /* Move the element 50% to the right */
+  transform: translateX(-50%); /* Offset the element back by 50% of its width */
+  display: block; /* Ensures the textarea takes up the full width and aligns properly */
+}
+
+/* Styling for the submit button */
+.submit-question-button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  background: linear-gradient(45deg,  #03f5fd, #d109f9); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Hover effect for the submit button */
+.submit-question-button:hover {
+  background: linear-gradient(45deg,#c107c7, #001a80);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for the add option button */
+.add-option-button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  background: linear-gradient(45deg,  #03f5fd, #d109f9); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px; /* Space above the button */
+  align-items: center;
+}
+
+/* Hover effect for the add option button */
+.add-option-button:hover {
+  background: linear-gradient(45deg,  #c107c7, #001a80);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for the options container */
+.options-container {
+  display: flex;
+  flex-direction: column; /* Display options horizontally */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  align-items: center; /* Center align items vertically */
+  gap: 15px; /* Space between options and button */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+/* Styling for each option input */
+.options-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Max width of inputs */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Styling for the notification message */
+.notification {
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Success notification */
+.notification.success {
+  background-color: #4caf50; /* Success color */
+}
+
+/* Error notification */
+.notification.error {
+  background-color: #f44336; /* Error color */
+}
+
+
+/* Styling for the border box */
+.form-box, .mentor-form-box{
+  width: 50%; /* Increase width to 80% of the parent container */
+  max-width: 500px; /* Optional: Limit maximum width */
+  border: 2px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent; /* Transparent background */
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .form-box, .mentor-form-box {
+    width: 90%; /* Use more width on smaller screens */
+  }
+}
+
+.retrieved-input {
+  width: 100%; /* Adjust width as needed */
+  height: 40px;
+  padding: 0px; /* Add some padding */
+  border: 1px solid #ccc; /* Add a light border */
+  border-radius: 4px; /* Slightly round the corners */
+  font-size: 20px; /* Increase the font size */
+  margin-top: 3px; /* Add some margin on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+  text-align: center; /* Center the text */
+}
+
+.retrieved-input:focus {
+  border-color: black; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Styling for the white text */
+.white-text {
+  color: rgb(11, 11, 11);
+}
+
+/* Styling for the dropdowns container */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between dropdowns */
+  margin-bottom: 30px; /* Space below the dropdowns */
+}
+
+/* Individual dropdown styling */
+.dropdown-container select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 150px; /* Adjust width as needed */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .dropdown-container {
+    flex-direction: column; /* Stack dropdowns vertically */
+  }
+  
+  .dropdown-container select {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* Container for the question posting form */
+.question-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Takes full width */
+  text-align: center;
+}
+
+/* Styling for the question and answer textareas */
+.question-form-container textarea {
+  width: 200%; /* Use 200% of the container's width */
+  max-width: 600px; /* Limit the maximum width */
+  height: 120px; /* Updated height */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 0; /* Remove previous margins */
+  position: relative; /* Enable positioning */
+  left: 50%; /* Move the element 50% to the right */
+  transform: translateX(-50%); /* Offset the element back by 50% of its width */
+  display: block; /* Ensures the textarea takes up the full width and aligns properly */
+}
+
+/* Styling for the submit button */
+.submit-question-button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  background: linear-gradient(45deg,  #03f5fd, #d109f9); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Hover effect for the submit button */
+.submit-question-button:hover {
+  background: linear-gradient(45deg,#c107c7, #001a80);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for the add option button */
+.add-option-button {
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  background: linear-gradient(45deg,  #03f5fd, #d109f9); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px; /* Space above the button */
+  align-items: center;
+}
+
+/* Hover effect for the add option button */
+.add-option-button:hover {
+  background: linear-gradient(45deg,  #c107c7, #001a80);
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for the options container */
+.options-container {
+  display: flex;
+  flex-direction: column; /* Display options horizontally */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  align-items: center; /* Center align items vertically */
+  gap: 15px; /* Space between options and button */
+  margin-bottom: 20px; /* Space below the container */
+}
+
+/* Styling for each option input */
+.options-container input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Max width of inputs */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.answer-input {
+  width: 100%; /* Make it full width */
+  padding: 10px; /* Add some padding */
+  border: 1px solid #ccc; /* Add a light border */
+  border-radius: 4px; /* Slightly round the corners */
+  font-size: 16px; /* Increase the font size */
+  margin-top: 8px; /* Add some margin on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.answer-input:focus {
+  border-color: black; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Styling for the notification message */
+.notification {
+  margin-top: 20px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Success notification */
+.notification.success {
+  background-color: #4caf50; /* Success color */
+}
+
+/* Error notification */
+.notification.error {
+  background-color: #f44336; /* Error color */
+}

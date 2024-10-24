@@ -1,0 +1,81 @@
+/* src/pages/CareerInformation.css */
+.career-info {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-top: 3%;
+    text-align: center; /* Center-align text and headings */
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Glacier-like background */
+  }
+  
+  .h1career.h1 {
+    color: #00796b; /* Elegant teal color for heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out; /* Animation for heading */
+  }
+  
+  .level-buttons, .filter-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .level-button, .filter-button {
+    background: linear-gradient(135deg, #00acc1, #00838f); /* Elegant gradient colors */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .level-button:hover, .filter-button:hover {
+    background: linear-gradient(135deg, #0097a7, #006064);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .job-list {
+    margin-top: 20px;
+  }
+  
+  .filter-buttons {
+    margin-top: 20px;
+  }
+  
+  .job-card {
+    background: linear-gradient(135deg, #ffffff, #f0f4c3); /* Light, elegant background */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    list-style-type: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  }
+  
+  .job-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #004d40; /* Elegant text color */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

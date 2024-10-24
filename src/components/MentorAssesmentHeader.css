@@ -1,0 +1,89 @@
+/* MentorAssessmentHeader.css */
+.fixed-header {
+  position: fixed; /* Fix the header to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  background: linear-gradient(135deg, rgb(20, 20, 33), rgba(0, 0, 0, 1));
+}
+.navbar-brand-custom {
+  color:white !important; /* Change text color to black */
+  font-weight: bold;
+  font-size: 1.3rem; /* Corrected spacing */
+  margin-left: 10px; /* Add spacing if needed */
+}
+/* Custom styling for the navbar header */
+.custom-header {
+    height: 60px; /* Adjust height as needed */
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Adjust padding for spacing */
+  }
+  
+  /* Additional styles for navbar if needed */
+  .custom-header .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the back-to-dashboardbutton */
+  .custom-header .back-to-dashboard-button {
+    border: 2px solid hwb(359 42% 6% / 0.573);
+    background-color: black;
+    color: #0dccf2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Adjust font size as needed */
+    border-radius: 20px; /* Optional: adds rounded corners */
+    white-space: nowrap; /* Ensure button text doesn't wrap */
+  }
+  
+  /* Hover effect for the back-to-dashboard button */
+  .custom-header .back-to-dashboard-button:hover {
+    background-color: hwb(359 42% 6% / 0.573);
+    color: black;
+  }
+
+  .welcome-username {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Reduce padding for smaller screens */
+  .custom-header {
+    padding: 0 15px;
+  }
+
+  /* Adjust font size and button padding */
+  .custom-header .back-to-dashboard-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand-custom {
+    font-size: 1.1rem; /* Reduce logo text size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust even further for very small screens */
+  .custom-header {
+    padding: 0 10px;
+  }
+
+  /* Further reduce button size and font */
+  .custom-header .back-to-dashboard-button {
+    font-size: 12px;
+    padding: 6px 12px; /* Reduce padding for mobile */
+  }
+
+  .navbar-brand-custom {
+    font-size: 1rem; /* Further reduce logo text size */
+  }
+}

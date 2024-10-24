@@ -1,0 +1,187 @@
+/* Base styling for the entire page */
+.student-assessment-selection {
+    font-family: 'Roboto', sans-serif; /* Changed font-family to Roboto */
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 50px;
+}
+
+/* Main container styling */
+.student-assessment-container {
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    border-radius: 12px;
+    padding: 30px;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+/* Card title styling */
+.student-assessment-container h2 {
+    font-family: 'Roboto', sans-serif; /* Ensure the font-family applies to headers */
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Increased font-size */
+}
+
+/* Form section styling */
+.student-assessment-container div {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.student-assessment-container label {
+    font-family: 'Roboto', sans-serif; /* Ensure the font-family applies to labels */
+    font-size: 20px; /* Increased font-size */
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Dropdown styling */
+.student-assessment-container select {
+    width: 29%;
+    padding: 12px; /* Increased padding */
+    font-size: 16px; /* Increased font-size */
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+/* Dropdown focus effect */
+.student-assessment-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+.student-assessment-container button {
+    padding: 12px 25px; /* Increased padding for better appearance */
+    background: linear-gradient(90deg,  #03f5fd, #d109f9); /* Blue gradient background */
+    color: white;
+    font-size: 18px; /* Increased font-size for better visibility */
+    font-weight: bold; /* Bold text for a stronger appearance */
+    text-transform: uppercase; /* Uppercase text for a stronger appearance */
+    border: none;
+    border-radius: 8px; /* Slightly larger border-radius for a softer edge */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Button hover effect */
+.student-assessment-container button:hover {
+    background: linear-gradient(90deg, #c107c7, #001a80); /* Darker blue gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Button active effect */
+.student-assessment-container button:active {
+    background: linear-gradient(90deg, #004494, #03f5fd); /* Even darker blue gradient when active */
+    transform: translateY(1px); /* Slight depression effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow returns to normal */
+}
+
+/* Success or error message styling */
+.student-assessment-message {
+    background-color: #2b2a2a;
+    color: white;
+    padding: 12px; /* Increased padding */
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px; /* Increased font-size */
+}
+
+/* Dynamic dropdown styling */
+.student-assessment-container .dynamic-dropdown {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding */
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+/* Proper positioning for dynamically displayed sections */
+.student-assessment-container .dynamic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.student-assessment-container .dynamic-section select {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens (min-width: 768px) */
+@media (max-width: 768px) {
+    .student-assessment-container {
+        width: 90%; /* Adjust width to 90% for smaller screens */
+        margin: 20px; /* Reduced margin */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .student-assessment-container h2 {
+        font-size: 22px; /* Slightly smaller font-size */
+    }
+
+    .student-assessment-container label {
+        font-size: 18px; /* Slightly smaller font-size */
+    }
+
+    .student-assessment-container select {
+        font-size: 15px; /* Slightly smaller font-size */
+    }
+
+    .student-assessment-container button {
+        font-size: 16px; /* Slightly smaller font-size */
+        padding: 10px 20px; /* Reduced padding */
+    }
+
+    .student-assessment-message {
+        font-size: 14px; /* Slightly smaller font-size */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .student-assessment-container {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .student-assessment-container h2 {
+        font-size: 20px; /* Even smaller font-size */
+    }
+
+    .student-assessment-container label {
+        font-size: 16px; /* Even smaller font-size */
+    }
+
+    .student-assessment-container select {
+        font-size: 14px; /* Even smaller font-size */
+    }
+
+    .student-assessment-container button {
+        font-size: 15px; /* Even smaller font-size */
+        padding: 8px 15px; /* Reduced padding */
+    }
+
+    .student-assessment-message {
+        font-size: 12px; /* Even smaller font-size */
+    }
+}

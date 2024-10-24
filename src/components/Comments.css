@@ -1,0 +1,216 @@
+/* General comments section styling */
+.comments-section {
+    display: flex;
+    flex-direction: column; /* Stack title and columns vertically */
+    align-items: center; /* Center-align the section */
+    padding: 60px 40px; /* Increased padding for space */
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    gap: 40px; /* Space between title and content */
+    margin: 80px auto 0; /* Center the section horizontally and add margin on top */
+    max-width: 1200px; /* Adjust this value as needed */
+    width: 100%; /* Ensure it uses full width up to max-width */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    border-radius: 50px;
+}
+
+/* Title for student and mentor comment pages */
+.comments-section h2 {
+    width: 100%; /* Full width for consistency */
+    text-align: center; /* Center-align the title */
+    font-size: 28px; /* Larger font size for emphasis */
+    font-weight: 700; /* Bolder text */
+    margin-bottom: 30px; /* More space below the title */
+    color: linear-gradient(to right, rgb(204, 2, 254), #00ffaa); /* Title color for prominence */
+    position: relative;
+    animation: fadeIn 1s ease-in-out; /* Animation for title */
+}
+
+/* Fade-in animation for the title */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container for post comments */
+.post-comments-wrapper {
+    flex: 1;
+    max-width: 50%; /* Increased width */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px; /* More rounded corners */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow outside container */
+    animation: slideIn 0.5s ease-out; /* Animation for container appearance */
+}
+
+/* Slide-in animation for containers */
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Left column for posting new comments */
+.post-comments-container {
+    position: sticky; /* Sticky effect */
+    top: 80px; /* Stay within margin */
+    overflow: hidden; /* Prevent overflow outside container */
+    max-height: calc(100vh - 120px); /* Dynamic height adjustment */
+}
+
+/* Right column for comments history */
+.comments-history-container {
+    flex: 1;
+    max-width: 50%; /* Increased width */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px; /* More rounded corners */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scroll */
+    max-height: calc(100vh - 120px); /* Dynamic height adjustment */
+    border-left: 1px solid #ddd; /* Border to separate columns */
+    animation: slideIn 0.5s ease-out; /* Animation for container appearance */
+}
+
+/* Comment card and post comments styling */
+.comment-card {
+    border: 1px solid #ddd;
+    border-radius: 12px; /* More rounded corners */
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent card size from expanding */
+    text-overflow: ellipsis; /* Handle overflow text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover effect */
+}
+
+/* Hover effect for comment cards */
+.comment-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+/* Paragraph styling inside comment cards */
+.comment-card p {
+    margin: 5px 0;
+    font-size: 16px; /* Increased font size for readability */
+    line-height: 1.6; /* Increased line height */
+    color: #333; /* Darker text color */
+    font-weight: 500; /* Slightly bolder text */
+}
+
+/* Textarea styling for comments input */
+.comment-input {
+    width: 100%;
+    min-height: 100px; /* Increased height for comfort */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Increased padding */
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Animation for focus effect */
+}
+
+/* Textarea focus effect */
+.comment-input:focus {
+    border-color: #d109f9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling within comments section */
+.comment-button {
+    margin-top: 15px;
+    padding: 10px 25px; /* Increased padding for better usability */
+    background: linear-gradient(45deg, #03f5fd, #d109f9); /* Gradient background from pink to dark blue */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Animation for hover effect and shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Button hover effect */
+.comment-button:hover {
+    background: linear-gradient(45deg, #c107c7, #001a80); /* Darker gradient for hover effect */
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Button active effect (pressed state) */
+.comment-button:active {
+    background: linear-gradient(45deg, #a100a2, #000d66); /* Even darker gradient for active state */
+    transform: scale(1); /* Scale back to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+
+/* Select element styling within comments section */
+.comment-select {
+    width: 100%;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Animation for focus effect */
+}
+
+/* Select focus effect */
+.comment-select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .comments-section {
+        padding: 30px 20px; /* Reduced padding */
+        margin: 40px auto 0; /* Reduced margin */
+    }
+    .comments-section h2 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+    .post-comments-wrapper,
+    .comments-history-container {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+    .post-comments-container {
+        top: 60px; /* Adjust top position for sticky effect */
+    }
+}
+
+@media (max-width: 480px) {
+    .comments-section {
+        padding: 20px 10px; /* Further reduced padding */
+        margin: 20px auto 0; /* Further reduced margin */
+    }
+    .comments-section h2 {
+        font-size: 20px; /* Smaller font size for mobile */
+    }
+    .post-comments-wrapper,
+    .comments-history-container {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 15px; /* Reduced padding inside containers */
+    }
+    .comment-input,
+    .comment-button,
+    .comment-select {
+        font-size: 12px; /* Smaller font size for inputs */
+    }
+}
+

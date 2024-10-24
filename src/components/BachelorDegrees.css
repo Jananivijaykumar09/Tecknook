@@ -1,0 +1,73 @@
+/* src/pages/BachelorDegrees.css */
+.bachelor-degrees-containerb {
+  margin-top: 3%;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Glacier-like background */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerb {
+  color: #00796b; /* Elegant teal color for heading */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: fadeInb 1s ease-out;
+  backdrop-filter: blur(5px); /* Adds a frosted effect behind the header text */
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background for the header */
+}
+
+.card-containerb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardb {
+  width: 220px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff, #f0f4c3); /* Light, elegant background */
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUpb 0.5s ease-out;
+}
+
+.cardb:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.card-linkb {
+  text-decoration: none;
+  color: #00796b; /* Elegant text color */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Animations */
+@keyframes fadeInb {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUpb {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,106 @@
+/* Specific Mentor Navbar Styling */
+.mentor-navbar {
+  background-color: black !important;
+  height: 70px;
+  display: flex;
+  justify-content: space-between; /* Adjust content spacing */
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Back to Login Button Styling */
+.back-to-login-button {
+  border: 2px solid rgba(255, 0, 0, 0.5);
+  background-color: black;
+  color: #0dccf2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Username Text Styling */
+.username-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white !important;
+  position: absolute; /* Use absolute positioning */
+  left: 50%; /* Move to the center */
+  transform: translateX(-50%); /* Center horizontally */
+  text-align: center;
+}
+
+/* Set the TechNook text color to white */
+.mentor-navbar .navbar-brand {
+  color: white !important;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Back to Login Button Hover Effect */
+.back-to-login-button:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  color: black;
+}
+
+/* Profile icon color */
+.profile-icon {
+  font-size: 24px;
+  color: #0dccf2;
+}
+
+/* Dropdown menu styling */
+.profile-dropdown .dropdown-menu {
+  background-color: #343a40;
+  min-width: 150px;
+}
+
+/* Ensure dropdown items are white */
+.profile-dropdown .dropdown-item {
+  color: white !important;
+}
+
+.profile-dropdown .dropdown-item:hover {
+  background-color: rgba(13, 204, 242, 0.8);
+}
+
+/* Responsive adjustments for smaller screens (Tablets) */
+@media (max-width: 768px) {
+  .back-to-login-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .navbar-brand img {
+    width: 120px;
+  }
+  
+  .username-text {
+    font-size: 18px; /* Reduce username font size on smaller screens */
+  }
+
+  .profile-dropdown .dropdown-menu {
+    min-width: 120px;
+  }
+}
+
+/* Responsive adjustments for very small screens (Mobile phones) */
+@media (max-width: 480px) {
+  .back-to-login-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .username-text {
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  .profile-dropdown .dropdown-menu {
+    min-width: 100px;
+  }
+}

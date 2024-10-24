@@ -1,0 +1,154 @@
+.student-assessment-page {
+    width: 150%;
+    max-width: 800px;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+    border-radius: 50px;
+    margin-top:70px;
+  }
+  
+  .question-card {
+    background-color: #fefefe;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-card p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .question-card textarea {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .question-card textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a horizontal row */
+    gap: 15px; /* Space between options */
+    align-items: center; /* Center items vertically within the container */
+  }
+  
+  .options-container label {
+    display: flex;
+    align-items: center; /* Center the radio button and text vertically */
+    font-size: 16px;
+    word-wrap: break-word;
+    color: #333;
+    padding: 5px;
+  }
+  
+  .options-container input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and text */
+  }
+
+  .question-card.incorrect {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border-left: 5px solid red; /* Red border on the left */
+  }
+
+  .submit-button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #03f5fd, #d109f9); /* Blue gradient background */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Slightly larger border radius for a softer edge */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold; /* Bold text for better visibility */
+    text-transform: uppercase; /* Uppercase text for a stronger appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(90deg, #c107c7, #001a80); /* Darker blue gradient on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .submit-button:active {
+    background: linear-gradient(90deg,  #004494, #03f5fd); /* Even darker blue gradient when active */
+    transform: translateY(1px); /* Slight depression effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow returns to normal */
+  }
+  
+  .submission-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color:  #004494;
+    font-weight: bold;
+  }
+
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+  .student-assessment-page {
+      width: 90%; /* Decrease width for smaller screens */
+      padding: 20px; /* Reduce padding for mobile */
+      margin: 10px; /* Reduce margins for mobile */
+  }
+
+  .question-card {
+      padding: 15px; /* Reduce padding in question cards */
+  }
+
+  .question-card p {
+      font-size: 16px; /* Decrease font size */
+  }
+
+  .question-card textarea {
+      font-size: 14px; /* Decrease textarea font size */
+  }
+
+  .options-container {
+      flex-direction: column; /* Stack options vertically */
+      gap: 10px; /* Decrease gap between options */
+  }
+
+  .submit-button {
+      padding: 10px 20px; /* Reduce button padding */
+      font-size: 16px; /* Decrease button font size */
+  }
+
+  .submission-message {
+      font-size: 16px; /* Decrease submission message font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .student-assessment-page {
+      padding: 15px; /* Further reduce padding for very small screens */
+  }
+
+  .question-card {
+      padding: 10px; /* Further reduce padding in question cards */
+  }
+
+  .submit-button {
+      width: 100%; /* Make button full width */
+  }
+}
+  

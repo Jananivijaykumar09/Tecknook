@@ -1,0 +1,192 @@
+/* Apply Roboto font globally */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main container styling */
+.mentor-resources-container {
+    max-width: 1000px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Gradient background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 550cpx; /* Set your desired height */
+}
+
+/* Main content styling */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between sections */
+}
+
+/* Upload section styling */
+.upload-section {
+    flex: 1;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Gradient background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    overflow: hidden; /* Ensure no overflow affects layout */
+    height: 470px; /* Set your desired height */
+}
+
+/* Upload header styling */
+.upload-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0b0b0b;
+    animation: fadeInUp 1s ease-out; /* Animation */
+}
+
+/* Form container styling */
+.upload-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input styling */
+.upload-input {
+    margin-bottom: 15px;
+}
+
+.upload-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.upload-input select, 
+.upload-input input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.btn-upload {
+    background: linear-gradient(45deg, #03f5fd, #d109f9); /* Gradient background */
+    border: none;
+    width: 120px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-upload:hover {
+    background: linear-gradient(45deg, #c107c7, #001a80); /* Darker gradient for hover effect */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.btn-upload:active {
+    background: linear-gradient(45deg, #0097a7, #a100a2); /* Even darker gradient for active state */
+    transform: scale(1); /* Scale back to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+/* Button styling for delete button */
+.btn-delete {
+    background: linear-gradient(45deg, #03f5fd, #d109f9); /* Gradient background */
+    border: none;
+    width: 70px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(45deg,  #c107c7, #001a80); /* Darker gradient for hover effect */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+.btn-delete:active {
+    background: linear-gradient(45deg, #0097a7, #a100a2); /* Even darker gradient for active state */
+    transform: scale(1); /* Scale back to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+}
+
+
+/* History section styling */
+.history-section {
+    flex: 1;
+    width: 1000px; /* Set your desired width */
+    background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Gradient background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 470px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Title styling */
+.mentor-resources-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0b0b0b;
+    animation: fadeIn 1s ease-in-out; /* Animation for title */
+}
+
+/* List styling */
+.upload-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.upload-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+/* Fade-in animation for the title */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mentor-resources-container {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .main-content {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 15px; /* Reduce space between sections */
+    }
+
+    .upload-section, .history-section {
+        width: 100%; /* Full width for both sections */
+        height: auto; /* Set height to auto for better responsiveness */
+    }
+
+    .upload-header, .mentor-resources-title {
+        font-size: 20px; /* Smaller font size for headers */
+    }
+
+    .upload-input label, .upload-input select, .upload-input input[type="file"] {
+        font-size: 16px; /* Smaller font size for inputs */
+    }
+
+    .btn-upload, .btn-delete {
+        width: 100%; /* Full width buttons on small screens */
+        font-size: 16px; /* Smaller font size for buttons */
+    }
+}

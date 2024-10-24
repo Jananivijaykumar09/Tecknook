@@ -1,0 +1,35 @@
+/* LoginRegisterHeader.css */
+.navbar {
+    background-color: transparent !important; /* Set background to transparent */
+  }
+  
+  .back-to-home-button {
+    border: 2px solid hwb(359 42% 6% / 0.573);
+    background-color: black;
+    color:  #0dccf2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Ensure button text doesn't wrap */
+  }
+  
+  .back-to-home-button:hover {
+    background-color: hwb(359 42% 6% / 0.573);
+    color: black;
+  }
+
+  /* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust the button padding and font size for smaller screens */
+  .back-to-home-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .back-to-home-button {
+    font-size: 12px;
+    padding: 6px 12px; /* Reduce padding for mobile */
+  }
+}
+  

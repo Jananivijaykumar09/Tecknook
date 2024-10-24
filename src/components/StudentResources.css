@@ -1,0 +1,187 @@
+/* Apply Roboto font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Heading styles specific to StudentResources */
+.student-resources-heading {
+  font-size: 2rem; /* Same size for both headings */
+  color: #000000; /* Example color, adjust as needed */
+  text-align: center; /* Center align the headings */
+  animation: fadeIn 1s ease; /* Animation for entering the page */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Slightly move up */
+  }
+  to {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move back to original position */
+  }
+}
+
+/* Main container styling */
+.student-resources-container {
+  max-width: 800px; /* Adjust width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea); /* Gradient background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Left section styling for dropdowns */
+.left-section {
+  flex: 1;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align dropdowns to the top */
+}
+
+/* Dropdown container */
+.dropdown-section {
+  margin-bottom: 15px; /* Space between dropdowns */
+}
+
+/* Input styling for dropdowns */
+.dropdown-section label {
+  display: block;
+  font-weight: 700; /* Increased font weight */
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 10px; /* Adjusted padding for consistency */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px; /* Consistent font size */
+  background-color: #fff; /* White background */
+  transition: border 0.3s; /* Smooth transition on focus */
+}
+
+/* Input field focus effect */
+.dropdown-section select:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+/* Right section styling for displaying resources */
+.right-section {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 500px; /* Set your desired height */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  display: flex;
+  flex-direction: column; /* Ensure resources start at the top */
+  background-color: transparent; /* Ensure the background is transparent */
+  justify-content: flex-start; /* Align items to the top */
+  border-radius: 12px;
+}
+
+/* Resources section styling */
+.resources-section {
+  margin-top: 20px; /* Ensure there's space between title and resources */
+  background-color: transparent; /* Ensure this is also transparent */
+  flex: 1; /* Allow it to take up remaining space */
+  display: flex; /* Use flex to stack resources */
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Resource list styling */
+.resource-list {
+  margin-top: 20px;
+  background-color: transparent; /* Ensure this is also transparent */
+  flex: 1; /* Allow the list to take up available space */
+  display: flex; /* Use flex for list items */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.resource-list ul {
+  list-style: none;
+  padding: 0;
+  background-color: transparent; /* Ensure this is also transparent */
+  margin: 0; /* Remove default margin */
+}
+
+.resource-list li {
+  margin-bottom: 10px;
+}
+
+.resource-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+/* Error message box styling */
+.error-message {
+  padding: 10px;
+  background-color: #ffdddd;
+  color: #d8000c;
+  border: 1px solid #d8000c;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+
+/* For small screens (up to 768px) */
+@media (max-width: 768px) {
+  .student-resources-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .student-resources-heading {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-section select {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .right-section {
+    max-height: 300px;
+  }
+}
+
+/* For extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .student-resources-heading {
+    font-size: 1.2rem;
+  }
+
+  .dropdown-section select {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .right-section {
+    max-height: 200px;
+  }
+}

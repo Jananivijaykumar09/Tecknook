@@ -1,0 +1,55 @@
+/* Ensure full height for the page */
+.video-page {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0; /* Ensure no margin affects the layout */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the video container */
+.video-container {
+    width: 100%; /* Allow the container to take full width */
+    max-width: 800px; /* Limit max width for larger screens */
+    text-align: center; /* Center the title and video */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Video styling */
+video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #0dccf2; /* Add a bold blue border */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 90%; /* Reduce width for tablets and smaller screens */
+    }
+
+    video {
+        width: 100%; /* Ensure video takes full width */
+        height: auto; /* Keep the aspect ratio intact */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%; /* Full width on mobile screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    video {
+        width: 100%; /* Full width video for mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust title size for mobile */
+    }
+}

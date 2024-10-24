@@ -1,0 +1,65 @@
+/* VideoHeader.css */
+
+/* Custom styling for the navbar header */
+.custom-header {
+  height: 60px; /* Adjust height as needed */
+  display: flex;
+  align-items: center; /* Vertically center items */
+  padding: 0 20px; /* Adjust padding for spacing */
+}
+
+/* Additional styles for navbar if needed */
+.custom-header .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.custom-header .back-to-home-button {
+  border: 2px solid hwb(359 42% 6% / 0.573);
+  background-color: black;
+  color: #0dccf2;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px; /* Adjust padding for button size */
+  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 20px; /* Optional: adds rounded corners */
+  white-space: nowrap; /* Ensure button text doesn't wrap */
+
+}
+
+.custom-header .back-to-home-button:hover {
+  background-color: hwb(359 42% 6% / 0.573);
+  color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-header {
+    height: auto; /* Let height adjust dynamically */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px; /* Add spacing between the logo and button */
+  }
+
+  .custom-header .navbar-brand img {
+    width: 120px; /* Adjust logo size for smaller screens */
+  }
+
+  .custom-header .back-to-home-button {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-header .navbar-brand img {
+    width: 100px; /* Further adjust logo size for very small screens */
+  }
+
+  .custom-header .back-to-home-button {
+    font-size: 12px; /* Further reduce button font size */
+    padding: 6px 12px; /* Further adjust padding for smaller button */
+  }
+}

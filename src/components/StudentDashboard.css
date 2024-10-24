@@ -1,0 +1,141 @@
+.student-dashboard {
+    padding: 2rem;
+    background: url('./pc-image.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: auto;
+}
+
+.custom-card {
+    flex-shrink: 0;
+    width: 300px;
+    margin: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-image {
+    width: 50px;
+    height: 50px;
+}
+
+.custom-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.custom-card-text {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.custom-button {
+    background-color: rgba(172, 118, 180, 0.8);
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 52px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: rgb(179, 116, 170);
+    color: #000;
+}
+
+/* Responsive adjustments */
+
+/* For tablets (screen width less than 768px) */
+@media (max-width: 768px) {
+    .student-dashboard {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .custom-card {
+        width: 250px; /* Reduce card width */
+    }
+}
+
+/* For mobile phones (screen width less than 480px) */
+@media (max-width: 480px) {
+    .student-dashboard {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 1rem;
+    }
+
+    .custom-card {
+        width: 100%; /* Full width for cards on mobile */
+        margin: 10px 0; /* Space between stacked cards */
+    }
+
+    .custom-card-title {
+        font-size: 1.2rem; /* Adjust title font size */
+    }
+
+    .custom-card-text {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .custom-button {
+        padding: 8px 15px; /* Reduce button padding */
+    }
+}
+
+/* For desktops with reduced screen width (between 768px and 1024px) */
+@media (max-width: 1024px) {
+    .student-dashboard {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        padding: 2rem;
+        align-items: center; /* Center the stacked cards */
+    }
+
+    .custom-card {
+        width: 100%; /* Cards take full width */
+        max-width: 350px; /* Limit card width to 350px */
+        margin: 15px 0; /* Margin between stacked cards */
+        flex-shrink: 0;
+    }
+
+    .custom-card-title {
+        font-size: 1.4rem; /* Reduce title font size */
+    }
+
+    .custom-card-text {
+        font-size: 1rem; /* Adjust text size for readability */
+    }
+
+    .custom-button {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
